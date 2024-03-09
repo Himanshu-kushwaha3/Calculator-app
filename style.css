@@ -1,0 +1,66 @@
+*{
+    inset: 0;
+}
+#header{
+    text-align: center;
+    background-color: rgb(33, 21, 83);
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+}
+.content{
+    width: 200px;
+    height: 200px;
+}
+#app_logo{
+    margin-top: 20px;
+    border-radius: 80px;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 6px #1a1919;
+    width: 100px;
+    height: 100px;
+}
+#about{
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 0;
+}
+#d{
+    padding-left:20px ;
+}
+.image{
+    width: 170px;
+    margin: 3px;
+    box-shadow: 2px 2px 6px #1a1919;
+}
+.image_box{
+    
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+}
+
+
+
+#install{
+    background-image: linear-gradient(red,blue);
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    text-decoration:  none;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+@media  screen  and (max-width: 405px) {
+    #app_logo{
+        width: 50px;
+        height: 50px;
+    } 
+    #install{
+        width: 100%;
+    
+    }   
+}
