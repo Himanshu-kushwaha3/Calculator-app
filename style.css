@@ -1,66 +1,91 @@
-*{
-    inset: 0;
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#header{
+
+/* Styles for the header */
+#header {
     text-align: center;
     background-color: rgb(33, 21, 83);
     color: white;
     padding: 5px;
     font-size: 25px;
+    transition: background-color 0.3s ease-in-out;
 }
-.content{
+
+/* Animation for the header color on hover */
+#header:hover {
+    background-color: rgb(65, 36, 210);
+}
+
+/* Styles for content elements */
+.content {
     width: 200px;
     height: 200px;
 }
-#app_logo{
+
+/* Styles for the app logo */
+#app_logo {
     margin-top: 20px;
-    border-radius: 80px;
-    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    border: 1px solid rgb(65, 36, 210);
     box-shadow: 2px 2px 6px #1a1919;
     width: 100px;
     height: 100px;
+    transition: background-color 0.3s ease-in-out;
 }
-#about{
+
+/* Animation for the app logo color and shape on hover */
+#app_logo:hover {
+    background-color: rgb(255, 193, 7);
+    border-radius: 10%;
+}
+
+/* Styles for the about section */
+#about {
     font-size: 20px;
     padding-left: 20px;
     margin-top: 0;
 }
-#d{
-    padding-left:20px ;
-}
-.image{
+
+/* Styles for images */
+.image {
     width: 170px;
     margin: 3px;
     box-shadow: 2px 2px 6px #1a1919;
 }
-.image_box{
-    
+
+/* Styles for the image box */
+.image_box {
     width: 100%;
     height: auto;
     overflow: scroll;
 }
 
+/* Styles for videos */
+video {
+    width: 200px;
+}
 
-
-#install{
-    background-image: linear-gradient(red,blue);
+/* Styles for the installation button */
+#install {
+    background-color: rgb(255, 0, 0);
     color: white;
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 5px;
-    text-decoration:  none;
+    border-radius: 50px;
+    text-decoration: none;
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
-@media  screen  and (max-width: 405px) {
-    #app_logo{
-        width: 50px;
-        height: 50px;
-    } 
-    #install{
-        width: 100%;
-    
-    }   
+
+/* Animation for the installation button color and shape on hover */
+#install:hover {
+    background-color: rgb(0, 0, 255);
+    border-radius: 5px;
 }
