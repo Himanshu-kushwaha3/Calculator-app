@@ -6,27 +6,39 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Calculator app</title>
+    <style>
+        /* Additional CSS styles */
+        #header:hover {
+            background-color: #555;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <div id="header">Calculator app Develop by Himanshu Kushwaha</div>
+    <div id="header">Calculator app Developed by Himanshu Kushwaha</div>
 
     <div>
         <table>
             <tr>
                 <td><img src="1702111631018.jpg" alt="Logo of app" id="app_logo"></td>
-                <td><span id="about"><b>Calculator App</b><br></span> <p id="d">This app is Develop by Himanshu Kushwaha</p></td>
+                <td><span id="about"><b>Calculator App</b><br></span> <p id="d">This app is Developed by Himanshu Kushwaha</p></td>
                 
             </tr>
             <tr>
                 <td colspan="2" style="text-align: center;"><a href="app-debug.apk" id="install" download="Calculator">Download &#10515; </a></td>
-                <td><a href="https://calculatorh201developbyhimanshu.on.drv.tw/more%20apps/">More Apps</a></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+<br>
+                    <a style="color: white;background-color: blue;padding: 5px;border-radius: 5px;text-decoration: none;" href="https://youtube.com/shorts/aDblBT0disM?si=Io_vqHM6_cEwGISy">App Screen Record</a>
+                </td>
             </tr>
         </table>
-            <hr>
+        <hr>
     </div>
     <div class="image_box">
-        <div style="width: 720px;">
-
+        <div style="width: 920px;">
+            
             <img class="image" src="Screenshot_1707313495.png" alt="1st image of app">
             <img class="image" src="Screenshot_1707313546.png" alt="2nd image of app">
             <img class="image" src="Screenshot_1707313619.png" alt="3rd image of app">
@@ -34,6 +46,15 @@
         </div>
     </div>
 
-
+    <script>
+        // JavaScript for changing header background color on hover
+        const header = document.getElementById('header');
+        header.addEventListener('mouseenter', function() {
+            header.style.backgroundColor = '#333';
+        });
+        header.addEventListener('mouseleave', function() {
+            header.style.backgroundColor = '#555';
+        });
+    </script>
 </body>
 </html>
